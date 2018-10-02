@@ -1,6 +1,9 @@
+# THIS IS A CLONE OF THE ORIGINAL TO ADD DART2 SUPPORT.
+# THIS WILL NOT BE UPDATED ONCE THE ORIGINAL STARTS SUPPORTING DART2!
+
 # Fluttery
 
-A Flutter package that helps with prototyping.
+A Flutter package that helps with prototyping. 
 
 ## Framing
 
