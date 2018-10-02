@@ -80,12 +80,14 @@ class OverlayBuilder extends StatefulWidget {
   final bool showOverlay;
   final Widget Function(BuildContext) overlayBuilder;
   final Widget child;
+  final Duration showAfter;
 
   OverlayBuilder({
     key,
     this.showOverlay = false,
     this.overlayBuilder,
     this.child,
+    this.showAfter = const Duration(milliseconds: 250),
   }) : super(key: key);
 
   @override
@@ -94,7 +96,6 @@ class OverlayBuilder extends StatefulWidget {
 
 class _OverlayBuilderState extends State<OverlayBuilder> {
   OverlayEntry overlayEntry;
-  final Duration magicDuration = Duration(milliseconds: 100);
 
   @override
   void initState() {
@@ -102,7 +103,7 @@ class _OverlayBuilderState extends State<OverlayBuilder> {
 
     if (widget.showOverlay) {
       new Timer(
-        magicDuration,
+        widget.showAfter,
         () => showOverlay(),
       );
     }
