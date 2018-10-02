@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttery/animations.dart';
+import 'package:fluttery_dart2/animations.dart';
 
 class AnimationPlayerExampleScreen extends StatefulWidget {
   @override

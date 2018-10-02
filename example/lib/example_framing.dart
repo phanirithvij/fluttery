@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttery/framing.dart';
+import 'package:fluttery_dart2/framing.dart';
 
 class RandomColorBlockExampleScreen extends StatelessWidget {
   @override

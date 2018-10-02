@@ -1,4 +1,4 @@
-import 'package:fluttery/framing.dart';
+import 'package:fluttery_dart2/framing.dart';
 import 'package:test/test.dart';
 
 void main() {

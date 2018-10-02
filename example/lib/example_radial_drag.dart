@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttery/gestures.dart';
+import 'package:fluttery_dart2/gestures.dart';
 
 class RadialDragExampleScreen extends StatefulWidget {
   @override

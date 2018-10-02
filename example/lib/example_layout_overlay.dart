@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:fluttery/layout.dart';
+import 'package:fluttery_dart2/layout.dart';
 
 class LayoutOverlayExampleScreen extends StatefulWidget {
   @override

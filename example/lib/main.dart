@@ -1,8 +1,8 @@
-import 'package:example/directory_screen.dart';
-import 'package:example/example_animation_player.dart';
-import 'package:example/example_framing.dart';
-import 'package:example/example_layout_overlay.dart';
-import 'package:example/example_radial_drag.dart';
+import 'directory_screen.dart';
+import 'example_animation_player.dart';
+import 'example_framing.dart';
+import 'example_layout_overlay.dart';
+import 'example_radial_drag.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(new MyApp());
