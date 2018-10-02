@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/widgets.dart';
 
 /// Displays an overlay Widget anchored directly above the center of this
@@ -92,13 +94,17 @@ class OverlayBuilder extends StatefulWidget {
 
 class _OverlayBuilderState extends State<OverlayBuilder> {
   OverlayEntry overlayEntry;
+  final Duration magicDuration = Duration(milliseconds: 100);
 
   @override
   void initState() {
     super.initState();
 
     if (widget.showOverlay) {
-      WidgetsBinding.instance.addPostFrameCallback((_) => showOverlay());
+      new Timer(
+        magicDuration,
+        () => showOverlay(),
+      );
     }
   }
 

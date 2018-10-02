@@ -5,14 +5,16 @@ import 'package:fluttery_dart2/layout.dart';
 
 class LayoutOverlayExampleScreen extends StatefulWidget {
   @override
-  _LayoutOverlayExampleScreenState createState() => new _LayoutOverlayExampleScreenState();
+  _LayoutOverlayExampleScreenState createState() =>
+      new _LayoutOverlayExampleScreenState();
 }
 
-class _LayoutOverlayExampleScreenState extends State<LayoutOverlayExampleScreen> {
+class _LayoutOverlayExampleScreenState
+    extends State<LayoutOverlayExampleScreen> {
   final fadeDuration = const Duration(milliseconds: 500);
 
-  bool isOverlayDesired = false;
-  bool isOverlayVisible = false;
+  bool isOverlayDesired = true;
+  bool isOverlayVisible = true;
 
   void showOverlay() {
     setState(() {
@@ -70,7 +72,8 @@ class _LayoutOverlayExampleScreenState extends State<LayoutOverlayExampleScreen>
         new Expanded(
           child: new AnchoredOverlay(
             showOverlay: isOverlayVisible,
-            overlayBuilder: (BuildContext context, Rect anchorBounds, Offset anchor) {
+            overlayBuilder:
+                (BuildContext context, Rect anchorBounds, Offset anchor) {
               return buildOverlay(anchor);
             },
             child: new Container(
