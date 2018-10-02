@@ -1,3 +1,9 @@
+## [0.0.8] - Oct 2, 2018.
+
+* FORKED FROM ORIGINAL SINCE IT HASN'T BEEN UPDATED TO FUNCTION WITH MODERN FLUTTER.
+* Moved to Dart 2.
+* Fixed quite a few race issues with building using the overlay helpers.
+
 ## [0.0.7] - May 31, 2018.
 
 * Changed AnchoredOverlay to report its anchor's bounds in addition to the anchor's center.
