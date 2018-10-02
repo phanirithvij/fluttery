@@ -163,7 +163,7 @@ class _OverlayBuilderState extends State<OverlayBuilder> {
 
   @override
   Widget build(BuildContext context) {
-    buildOverlay();
+    WidgetsBinding.instance.addPostFrameCallback((_) => buildOverlay());
 
     return widget.child;
   }
