@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/widgets.dart';
 
 /// Displays an overlay Widget anchored directly above the center of this
@@ -80,14 +78,12 @@ class OverlayBuilder extends StatefulWidget {
   final bool showOverlay;
   final Widget Function(BuildContext) overlayBuilder;
   final Widget child;
-  final Duration showAfter;
 
   OverlayBuilder({
     key,
     this.showOverlay = false,
     this.overlayBuilder,
     this.child,
-    this.showAfter = const Duration(milliseconds: 250),
   }) : super(key: key);
 
   @override
@@ -102,10 +98,7 @@ class _OverlayBuilderState extends State<OverlayBuilder> {
     super.initState();
 
     if (widget.showOverlay) {
-      new Timer(
-        widget.showAfter,
-        () => showOverlay(),
-      );
+      WidgetsBinding.instance.addPostFrameCallback((_) => showOverlay());
     }
   }
 

@@ -1,3 +1,7 @@
+## [0.0.9] - Oct 2, 2018.
+
+* Removed timer in favor of addPostFrameCallback as used in other overrides.
+
 ## [0.0.8] - Oct 2, 2018.
 
 * FORKED FROM ORIGINAL SINCE IT HASN'T BEEN UPDATED TO FUNCTION WITH MODERN FLUTTER.
