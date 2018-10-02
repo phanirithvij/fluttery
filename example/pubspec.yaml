@@ -8,7 +8,7 @@ dependencies:
   cupertino_icons: ^0.1.0
 
 dev_dependencies:
-  fluttery:
+  fluttery_dart2:
     path: ../
   flutter_test:
     sdk: flutter
